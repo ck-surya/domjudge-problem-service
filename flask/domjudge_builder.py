@@ -1,5 +1,6 @@
 import os
-from flask.generate_pdf import create_problem_pdf
+from generate_pdf import create_problem_pdf
+
 
 def build_problem_package(data):
     base_dir = f"output/{data['title'].replace(' ', '_')}"
