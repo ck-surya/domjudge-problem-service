@@ -8,7 +8,7 @@ services:
       - "--entrypoints.websecure.address=:443"
       - "--entrypoints.web.address=:80"
       - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
-      - "--certificatesresolvers.myresolver.acme.email=your-email@example.com"
+      - "--certificatesresolvers.myresolver.acme.email=anup.kablia@gmail.com"
       - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
     ports:
       - "80:80"
@@ -22,7 +22,7 @@ services:
     build: ./flask
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.domjudge.rule=Host(`judge.justuju.in`)"
+      - "traefik.http.routers.domjudge.rule=Host(`test.csbasics.in`)"
       - "traefik.http.routers.domjudge.entrypoints=websecure"
       - "traefik.http.routers.domjudge.tls.certresolver=myresolver"
     restart: always
