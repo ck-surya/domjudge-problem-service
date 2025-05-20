@@ -3,7 +3,7 @@ from generate_pdf import create_problem_pdf
 
 
 def build_problem_package(data):
-    base_dir = f"output/{data['title'].replace(' ', '_')}"
+    base_dir = f"output/{data['title']}"
     sample_dir = os.path.join(base_dir, "data/sample")
     secret_dir = os.path.join(base_dir, "data/secret")
     os.makedirs(sample_dir, exist_ok=True)
