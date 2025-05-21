@@ -1,1 +1,7 @@
 domjudge
+venv
+*.pyc
+__pycache__
+test*
+output
+*.log
