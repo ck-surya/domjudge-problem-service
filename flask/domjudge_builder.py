@@ -18,7 +18,7 @@ def build_problem_package(data):
     os.makedirs(statement_dir, exist_ok=True)
 
     # Copy validator code from root
-    root_checker_path = "output_validators/checker"  # Path to reusable validator
+    root_checker_path = "checker"  # Path to reusable validator
     if os.path.exists(root_checker_path):
         shutil.copytree(root_checker_path, checker_dir, dirs_exist_ok=True)
     else:
